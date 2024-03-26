@@ -1,0 +1,12 @@
+Arrow Functions (Funciones Flecha):
+Las arrow functions son una forma concisa de escribir funciones en JavaScript.
+Características:
+-No tienen su propio contexto de this, lo que significa que heredan el valor de this del ámbito circundante.
+-Son útiles para funciones simples con una sola expresión.
+-No pueden ser utilizadas como constructores (no se pueden llamar con new).
+-No pueden contener la palabra clave yield (no pueden ser funciones generadoras).
+
+
+Callbacks:
+Un callback es una función pasada como argumento a otra función.
+Se ejecuta (o “llama de vuelta”) después de que la función receptora haya completado su tarea.
