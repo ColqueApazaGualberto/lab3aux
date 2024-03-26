@@ -11,6 +11,8 @@
   /*Resultado esperado: [5, 10, 15, 20, 25] */
 
   /* First excercise */
+  let result = numbers.map(num => num * 5); //map toma como argumento una función. Luego, aplica esa función a cada elemento 
+
 
   /* Second excercise */
 
@@ -21,6 +23,8 @@
   /* Resultado esperado: ["Daniel", "Jhosep", "Rodrigo", "Veronica"] */
 
   /* Second excercise */
+  let sortedNames = names.sort(); //sort ordena los nombres en orden alfabético.
+
 
   /* Thrid excercise */
 
@@ -30,6 +34,8 @@
   /* Resultado esperado: ['a', 'b', 'z', 'r', 'c'] */
 
   /* Thrid excercise */
+  const uniqueLetters = new Set(data);
+  const norepit = Array.from(uniqueLetters);
 
   /* Fourth excercise */
 
@@ -50,5 +56,12 @@
   */
 
   /* Fourth excercise */
+
+  const letterCounts = {};
+  for (const char of largeWord) {
+    if (char.match(/[a-zA-Z]/)) {
+      letterCounts[char] = (letterCounts[char] || 0) + 1;
+    }
+  }
 
 })();
